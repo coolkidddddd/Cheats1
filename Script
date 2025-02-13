@@ -1,0 +1,150 @@
+local Window = Rayfield:CreateWindow({
+   Name = "Nigger Destoryers! Private",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Rayfield Interface Suit",
+   LoadingSubtitle = "By Uranus Tickler",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "UranusYN"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = True, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Nigger Destoryer Private",
+      Subtitle = "Dont Share This",
+      Note = "Only Way is Getting The Key From The Owner", -- Use this to tell the user how to get a key
+      FileName = "SkibidiRizzCheats", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://pastebin.com/raw/ejMZpMTX"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Home🏠", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
+    
+    Rayfield:Notify({
+   Title = "You have used Nigger Uranus Licker👅",
+   Content = "Make Sure to say nigger!",
+   Duration = 4,
+   Image = nil,
+})")
+
+    local Slider = MainTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {0, 500},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Explaple", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+local Tab = AutoFarmNormal:CreateTab("AutoFarm Normal", nil) -- Title, Image
+
+local Section = AutofarmTab:CreateSection("Autofarm")
+
+local Button = AutofarmTab:CreateButton({
+   Name = "Chest Farm",
+   Callback = function()
+        local args = {
+                    [1] = {
+                        ["data"] = {
+                            ["trainIndex"] = 4
+                            ["trainType"] = 1
+                        },
+                        ["protold"] = 26502
+                    }
+                }
+
+                game:GetService("ReplicatedStoraged").RemoteEvent.Main:Fireserver(unpack(args))
+   end,
+})
+
+    local Button = Tab:CreateButton({
+   Name = "Leg Farm",
+   Callback = function()
+   local args = {
+                    [1] = {
+                        ["data"] = {
+                            ["trainIndex"] = 4
+                            ["trainType"] = 3
+                        },
+                        ["protold"] = 26502
+                    }
+                }
+
+                game:GetService("ReplicatedStoraged").RemoteEvent.Main:Fireserver(unpack(args))
+   end,
+})
+
+    local Button = Tab:CreateButton({
+   Name = "Fist Farm",
+   Callback = function()
+   local args = {
+                    [1] = {
+                        ["data"] = {
+                            ["trainIndex"] = 2
+                            ["trainType"] = 4
+                        },
+                        ["protold"] = 26502
+                    }
+                }
+
+                game:GetService("ReplicatedStoraged").RemoteEvent.Main:Fireserver(unpack(args))
+   end,
+})
+
+    local Button = Tab:CreateButton({
+   Name = "Arm Farm",
+   Callback = function()
+     local args = {
+                    [1] = {
+                        ["data"] = {
+                            ["trainIndex"] = 2
+                            ["trainType"] = 2
+                        },
+                        ["protold"] = 26502
+                    }
+                }
+
+                game:GetService("ReplicatedStoraged").RemoteEvent.Main:Fireserver(unpack(args))
+   end,
+})
+
+    local Tab = AutoFarmOP:CreateTab("Auto Farm OP", nil -- Title, Image
+    local AutoFamrSection = FarmTab:CreateSection("Main")
+
+    local Toggle = AutoFarmOPTab:CreateToggle({
+   Name = "Farm Spamer might lag",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+  while wait() do
+    local args = {
+                        [1] ={
+                            {"data"} = {
+                                ["trainIndex"] = 3
+                                ["trainType"] = 3
+                            },
+                            ["protold"] = 26504
+                        }
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvent.Maian:FireServer(unpack(args))
+                end
+   end,
+})
