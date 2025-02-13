@@ -1,8 +1,8 @@
 local Window = Rayfield:CreateWindow({
-   Name = "Uranus! Private",
+   Name = "Uranus Niggers",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Rayfield Interface Suit",
-   LoadingSubtitle = "By Uranus Tickler",
+   LoadingTitle = "Welcome to uranus!",
+   LoadingSubtitle = "By a nigger",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
@@ -11,7 +11,7 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "UranusYN"
+      FileName = "SkibidiCheats"
    },
 
    Discord = {
@@ -20,42 +20,20 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = True, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Uranus Destoryer Private",
-      Subtitle = "Dont Share This",
-      Note = "Only Way is Getting The Key From The Owner", -- Use this to tell the user how to get a key
-      FileName = "SkibidiRizzCheats", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      Title = "",
+      Subtitle = "Key",
+      Note = "Only way to get the key is from the owner", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"https://pastebin.com/raw/ejMZpMTX"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
-local MainTab = Window:CreateTab("Home🏠", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("Main")
-    
-    Rayfield:Notify({
-   Title = "You have used Uranus Licker👅",
-   Content = "Make Sure to say skibidi!",
-   Duration = 4,
-   Image = nil,
-})")
-
-    local Slider = MainTab:CreateSlider({
-   Name = "Walkspeed",
-   Range = {0, 500},
-   Increment = 1,
-   Suffix = "Speed",
-   CurrentValue = 16,
-   Flag = "Explaple", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
-   end,
-})
-
-local Tab = AutoFarmNormal:CreateTab("AutoFarm Normal", nil) -- Title, Image
-
+local AutofarmTab = Window:CreateTab("Auto Farm OP", nil) -- Title, Image
+local Section = AutofarmTab:CreateSection("Main
 local Section = AutofarmTab:CreateSection("Autofarm")
 
 local Button = AutofarmTab:CreateButton({
@@ -123,13 +101,7 @@ local Button = AutofarmTab:CreateButton({
                 }
 
                 game:GetService("ReplicatedStoraged").RemoteEvent.Main:Fireserver(unpack(args))
-   end,
-})
-
-    local Tab = AutoFarmOP:CreateTab("Auto Farm OP", nil -- Title, Image
-    local AutoFamrSection = FarmTab:CreateSection("Main")
-
-    local Toggle = AutoFarmOPTab:CreateToggle({
+                 local Toggle = AutoFarmOPTab:CreateToggle({
    Name = "Farm Spamer might lag",
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
